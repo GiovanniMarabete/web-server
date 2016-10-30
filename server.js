@@ -6,6 +6,12 @@ var PORT = '3000';
     //res.send('Hello Express!');
 //});
 
+//var meta  = new AWS.MetadataService();
+
+//meta.request("/latest/meta-data/instance-id", function(err, data){
+   // console.log(data);
+//});
+
 app.get('/about', function (req , res){
     res.send('We are The Best!!!');
 });
