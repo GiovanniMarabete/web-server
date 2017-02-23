@@ -7,14 +7,14 @@ app.get('/about', function (req , res){
     res.send('We are The Best!!!');
 });
 
-app.get('/meta', function (req , res){
-    request('http://169.254.169.254/latest/meta-data/public-hostname', function (error, response, body) {
+//app.get('/meta', function (req , res){
+  //  request('http://169.254.169.254/latest/meta-data/public-hostname', function (error, response, body) {
   //if (!error && response.statusCode == 200) 
    //var META = $body
    //console.log(body)
  // });
-    res.send(body);
-})});
+    //res.send(body);
+//})});
 
 app.use(express.static(__dirname + '/public'));
 
